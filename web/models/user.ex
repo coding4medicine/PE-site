@@ -14,12 +14,28 @@ defmodule C4m.User do
     timestamps()
   end
 
-  @doc """
-  Builds a changeset based on the `struct` and `params`.
-  """
-  def changeset(struct, params \\ %{}) do
-    struct
-    |> cast(params, [:email, :password_hash, :reset_password_token, :reset_password_sent_at, :confirmation_token, :confirmation_sent_at, :confirmed_at])
-    |> validate_required([:email, :password_hash, :reset_password_token, :reset_password_sent_at, :confirmation_token, :confirmation_sent_at, :confirmed_at])
+
+   def changeset(model, params \\ :empty) do
+    model
+    |> cast(params, ~w(email), [])
+    |> validate_length(:password, min: 6)
+    |> validate_format(:email, ~r/@/)
+  end
+
+  def registration_changeset(model, params) do
+    model
+    |> changeset(params)
+    |> cast(params, ~w(password), [])
+    |> validate_length(:password, min: 6)
+    |> put_password_hash()
+  end
+
+  defp put_password_hash(changeset) do
+    case changeset do
+      %Ecto.Changeset{valid?: true, changes: %{password: pass}} ->
+        put_change(changeset, :password_hash, Comeonin.Bcrypt.hashpwsalt(pass))
+      _ ->
+        changeset
+    end
   end
 end

@@ -1,38 +1,8 @@
-<h2>Listing users</h2>
-
+<h1>Users</h1>
 <table class="table">
-  <thead>
+  <%= for user <- @users do %>
     <tr>
-      <th>Email</th>
-      <th>Password hash</th>
-      <th>Reset password token</th>
-      <th>Reset password sent at</th>
-      <th>Confirmation token</th>
-      <th>Confirmation sent at</th>
-      <th>Confirmed at</th>
-
-      <th></th>
+      <td><%= user.email %> (<%= link "View", to: user_path(@conn, :show, user) %>) </td>
     </tr>
-  </thead>
-  <tbody>
-<%= for user <- @users do %>
-    <tr>
-      <td><%= user.email %></td>
-      <td><%= user.password_hash %></td>
-      <td><%= user.reset_password_token %></td>
-      <td><%= user.reset_password_sent_at %></td>
-      <td><%= user.confirmation_token %></td>
-      <td><%= user.confirmation_sent_at %></td>
-      <td><%= user.confirmed_at %></td>
-
-      <td class="text-right">
-        <%= link "Show", to: user_path(@conn, :show, user), class: "btn btn-default btn-xs" %>
-        <%= link "Edit", to: user_path(@conn, :edit, user), class: "btn btn-default btn-xs" %>
-        <%= link "Delete", to: user_path(@conn, :delete, user), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
-      </td>
-    </tr>
-<% end %>
-  </tbody>
+  <% end %>
 </table>
-
-<%= link "New user", to: user_path(@conn, :new) %>

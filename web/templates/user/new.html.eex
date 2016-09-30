@@ -1,6 +1,44 @@
-<h2>New user</h2>
+<div class="register-box">
+  <div class="register-logo">
+    <a href="../../index2.html"><b>Admin</b>LTE</a>
+  </div>
 
-<%= render "form.html", changeset: @changeset,
-                        action: user_path(@conn, :create) %>
+  <div class="register-box-body">
+    <p class="login-box-msg">Register a new membership</p>
 
-<%= link "Back", to: user_path(@conn, :index) %>
+<%= form_for @changeset, user_path(@conn, :create), fn f -> %>
+<%= if @changeset.action do %>
+    <div class="alert alert-danger">
+      <p>Oops, something went wrong</p>
+      <% end %>
+      <div class="form-group has-feedback">
+    <%= text_input f, :email, placeholder: "Email", class: "form-control" %>
+    <%= error_tag f, :email %>
+        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+      </div>
+      <div class="form-group has-feedback">
+    <%= password_input f, :password, placeholder: "Password", class: "form-control" %>
+    <%= error_tag f, :password %>
+        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+      </div>
+      <div class="row">
+        <div class="col-xs-8">
+          <div class="checkbox icheck">
+            <label>
+              <input type="checkbox"> I agree to the <a href="#">terms</a>
+            </label>
+          </div>
+        </div>
+        <!-- /.col -->
+        <div class="col-xs-4">
+		<%= submit "Create new user", class: "btn btn-primary btn-block btn-flat" %>
+        </div>
+        <!-- /.col -->
+      </div>
+<% end %>
+
+    <a href="login.html" class="text-center">I already have a membership</a>
+  </div>
+  <!-- /.form-box -->
+</div>
+<!-- /.register-box -->

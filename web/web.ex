@@ -22,7 +22,7 @@ defmodule C4m.Web do
 
       import Ecto
       import Ecto.Changeset
-      import Ecto.Query
+      import Ecto.Query, only: [from: 1, from: 2]
     end
   end
 
@@ -32,7 +32,7 @@ defmodule C4m.Web do
 
       alias C4m.Repo
       import Ecto
-      import Ecto.Query
+      import Ecto.Query, only: [from: 1, from: 2]
 
       import C4m.Router.Helpers
       import C4m.Gettext
@@ -52,6 +52,7 @@ defmodule C4m.Web do
       import C4m.Router.Helpers
       import C4m.ErrorHelpers
       import C4m.Gettext
+      import C4m.ViewHelper
     end
   end
 
@@ -67,7 +68,7 @@ defmodule C4m.Web do
 
       alias C4m.Repo
       import Ecto
-      import Ecto.Query
+      import Ecto.Query, only: [from: 1, from: 2]
       import C4m.Gettext
     end
   end

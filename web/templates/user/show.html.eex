@@ -1,43 +1,17 @@
-<h2>Show user</h2>
-
-<ul>
-
-  <li>
-    <strong>Email:</strong>
-    <%= @user.email %>
-  </li>
-
-  <li>
-    <strong>Password hash:</strong>
-    <%= @user.password_hash %>
-  </li>
-
-  <li>
-    <strong>Reset password token:</strong>
-    <%= @user.reset_password_token %>
-  </li>
-
-  <li>
-    <strong>Reset password sent at:</strong>
-    <%= @user.reset_password_sent_at %>
-  </li>
-
-  <li>
-    <strong>Confirmation token:</strong>
-    <%= @user.confirmation_token %>
-  </li>
-
-  <li>
-    <strong>Confirmation sent at:</strong>
-    <%= @user.confirmation_sent_at %>
-  </li>
-
-  <li>
-    <strong>Confirmed at:</strong>
-    <%= @user.confirmed_at %>
-  </li>
-
-</ul>
-
-<%= link "Edit", to: user_path(@conn, :edit, @user) %>
-<%= link "Back", to: user_path(@conn, :index) %>
+<h1><%= @user.email %></h1>
+<%= form_for @changeset, user_path(@conn, :update, @user), fn f -> %>
+  <%= if @changeset.action do %>
+    <div class="alert alert-danger">
+      <p>Oops, something went wrong</p>
+      <% end %>
+  <div class="form-group">
+    <%= text_input f, :email, placeholder: "Email", class: "form-control" %>
+    <%= error_tag f, :email %>
+  </div>
+  <div class="form-group">
+    <%= password_input f, :password, placeholder: "Password", class: "form-control" %>
+    <%= error_tag f, :password %>
+  </div>
+  <%= submit "Update user", class: "btn btn-primary" %>
+<% end %>
+<%= link "Delete Account", to: user_path(@conn, :delete, @user), method: :delete, class: "btn btn-danger" %><br>
