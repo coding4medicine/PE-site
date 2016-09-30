@@ -1,0 +1,6 @@
+<h2>New sshkey</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: sshkey_path(@conn, :create) %>
+
+<%= link "Back", to: sshkey_path(@conn, :index) %>

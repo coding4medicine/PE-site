@@ -1,0 +1,6 @@
+<h2>Edit buy plan</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: buy_plan_path(@conn, :update, @buy_plan) %>
+
+<%= link "Back", to: buy_plan_path(@conn, :index) %>

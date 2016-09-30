@@ -1,0 +1,42 @@
+<h2>Listing buyplans</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Plan</th>
+      <th>Stripe</th>
+      <th>Card four</th>
+      <th>Price</th>
+      <th>Status</th>
+      <th>Request date</th>
+      <th>Purchase date</th>
+      <th>End date</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for buy_plan <- @buyplans do %>
+    <tr>
+      <td><%= buy_plan.user_id %></td>
+      <td><%= buy_plan.plan_id %></td>
+      <td><%= buy_plan.stripe_id %></td>
+      <td><%= buy_plan.card_four %></td>
+      <td><%= buy_plan.price %></td>
+      <td><%= buy_plan.status %></td>
+      <td><%= buy_plan.request_date %></td>
+      <td><%= buy_plan.purchase_date %></td>
+      <td><%= buy_plan.end_date %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: buy_plan_path(@conn, :show, buy_plan), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: buy_plan_path(@conn, :edit, buy_plan), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: buy_plan_path(@conn, :delete, buy_plan), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New buy plan", to: buy_plan_path(@conn, :new) %>

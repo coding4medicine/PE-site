@@ -1,0 +1,6 @@
+<h2>New buy book</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: buy_book_path(@conn, :create) %>
+
+<%= link "Back", to: buy_book_path(@conn, :index) %>

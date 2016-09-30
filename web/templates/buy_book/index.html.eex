@@ -1,0 +1,34 @@
+<h2>Listing buybooks</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Book</th>
+      <th>Stripe</th>
+      <th>Card four</th>
+      <th>Price</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for buy_book <- @buybooks do %>
+    <tr>
+      <td><%= buy_book.user_id %></td>
+      <td><%= buy_book.book_id %></td>
+      <td><%= buy_book.stripe_id %></td>
+      <td><%= buy_book.card_four %></td>
+      <td><%= buy_book.price %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: buy_book_path(@conn, :show, buy_book), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: buy_book_path(@conn, :edit, buy_book), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: buy_book_path(@conn, :delete, buy_book), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New buy book", to: buy_book_path(@conn, :new) %>

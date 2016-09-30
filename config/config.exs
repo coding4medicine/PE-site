@@ -12,7 +12,7 @@ config :c4m,
 # Configures the endpoint
 config :c4m, C4m.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "20Q8ACEhWAvsLlzwQTERgup4IsFwAyzfqve0fuSbI97QWD5yzrCOs5SiL1Lbi0El",
+  secret_key_base: "LebC/sRHeGI/spujQY0TMNFPVasqP4FxEWeaPsAdgJHStP1zw9mvO0UVosPDdr2f",
   render_errors: [view: C4m.ErrorView, accepts: ~w(html json)],
   pubsub: [name: C4m.PubSub,
            adapter: Phoenix.PubSub.PG2]

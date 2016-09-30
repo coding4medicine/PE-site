@@ -1,0 +1,33 @@
+<h2>Show buy book</h2>
+
+<ul>
+
+  <li>
+    <strong>User:</strong>
+    <%= @buy_book.user_id %>
+  </li>
+
+  <li>
+    <strong>Book:</strong>
+    <%= @buy_book.book_id %>
+  </li>
+
+  <li>
+    <strong>Stripe:</strong>
+    <%= @buy_book.stripe_id %>
+  </li>
+
+  <li>
+    <strong>Card four:</strong>
+    <%= @buy_book.card_four %>
+  </li>
+
+  <li>
+    <strong>Price:</strong>
+    <%= @buy_book.price %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: buy_book_path(@conn, :edit, @buy_book) %>
+<%= link "Back", to: buy_book_path(@conn, :index) %>

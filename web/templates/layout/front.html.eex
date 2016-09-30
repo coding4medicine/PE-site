@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<title>Coding for Medicine - Coding for Medicine</title>
+<meta property="og:locale" content="en">
+<meta property="og:site_name" content="Coding for Medicine">
+<meta property="og:title" content="Coding for Medicine">
+<meta name="twitter:site" content="@coding4medicine">
+<meta name="twitter:title" content="Coding for Medicine">
+<meta name="twitter:description" content="">
+<meta name="twitter:card" content="summary">
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Coding for Medicine",
+      "url" : "http://coding4medicine.com:2120",
+      "sameAs" : null
+    }
+  </script>
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://coding4medicine.com:2121/assets/css/main.css">
+<meta http-equiv="cleartype" content="on">
+</head>
+<body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://coding4medicine.com:2121/">Coding for Medicine</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://coding4medicine.com:2121/pages/membership.html">Membership</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://coding4medicine.com:2121/blog/">Announcements</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://coding4medicine.com:2121/pages/summer.html">High school</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="">Sign in</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+<div id="main" role="main">
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Coding for Medicine">
+    <div class="page__inner-wrap">
+        <header>
+          <h1 class="page__title" itemprop="headline">Coding for Medicine </h1>
+        </header>
+
+        <%= render @view_module, @view_template, assigns %>
+        
+      </section>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    <div class="page__footer">
+      <footer>
+        <ul class="default">
+<li><a href="/pages/about.html">About us</a></li>
+<li><a href="/pages/membership.html">Membership</a>
+	<ul>
+		<li><a href="/pages/rhodium.html">Rhodium plan</a></li>
+		<li><a href="/pages/platinum.html">Platinum plan</a></li>
+		<li><a href="/pages/palladium.html">Palladium plan</a></li>
+	</ul>
+</li>
+<li><a href="/blog/">News</a></li>
+<li>High school<br>
+	<ul>
+		<li><a href="/pages/summer.html">Summer program</a></li>
+		<li><a href="">Course description</a></li>
+		<li><a href="">Sign up for 2017</a></li>
+		<li><a href="">2016 review</a></li>
+		<li><a href="">2015 review</a></li>
+		<li><a href="">Sign up for 2017</a></li>
+	</ul>
+</li>
+<li><A href="/pages/resources.html">Resources</A>
+	<ul>
+		<li><a href="http://coding4medicine.com/code-all/">Python sandbox</a></li>
+		<li><a href="">Tutorials</a></li>
+		<li><a href="">Books</a></li>
+		<li><a href="">RNAseq</a></li>
+		<li><a href="">Genome assembly</a></li>
+	</ul>
+</li>
+<li><A href="/pages/classes.html">Online classes</A></li>
+<li><A href="/legal/privacy.html">Privacy</A></li>
+<li><A href="/legal/terms.html">Terms</A></li>
+</ul>
+
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+      <li><a href="https://twitter.com/coding4medicine"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+    
+    
+      <li><a href="https://facebook.com/Coding4Medicine-747422685363138"><i class="fa fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+    
+    
+    
+    <li><a href="http://coding4medicine.com:2121/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2016 Coding for Medicine. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+      </footer>
+    </div>
+
+    <script src="http://coding4medicine.com:2121/assets/js/main.min.js"></script>
+
+
+
+
+
+  </body>
+</html>

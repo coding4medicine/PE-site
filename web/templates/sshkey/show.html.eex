@@ -1,0 +1,18 @@
+<h2>Show sshkey</h2>
+
+<ul>
+
+  <li>
+    <strong>User:</strong>
+    <%= @sshkey.user_id %>
+  </li>
+
+  <li>
+    <strong>Key:</strong>
+    <%= @sshkey.key %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: sshkey_path(@conn, :edit, @sshkey) %>
+<%= link "Back", to: sshkey_path(@conn, :index) %>

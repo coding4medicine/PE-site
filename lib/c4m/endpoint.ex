@@ -36,7 +36,7 @@ defmodule C4m.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_c4m_key",
-    signing_salt: "YG4f0hl9"
+    signing_salt: "vgytztyy"
 
   plug C4m.Router
 end

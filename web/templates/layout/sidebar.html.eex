@@ -1,0 +1,120 @@
+      <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu">
+        <li class="header">MAIN NAVIGATION</li>
+        <li>
+          <a href="http://coding4medicine.com/Materials/daily/201603/day9.html">
+            <i class="fa fa-calendar"></i> <span>Daily updates</span>
+            <small class="label pull-right bg-red">2016/3/9</small>
+          </a>
+        </li>
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>If you are new here</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="doc-objective/"><i class="fa fa-circle-o"></i> What we plan to accomplish</a></li>
+            <li><a href="doc-example/"><i class="fa fa-circle-o"></i> Starting example</a></li>
+            <li><a href="doc-instructions/"><i class="fa fa-circle-o"></i> Login instructions</a></li>
+            <li><a href="doc-data/"><i class="fa fa-circle-o"></i> Data sets</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>Unix and scripting</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="http://coding4medicine.com/Materials/linux/"><i class="fa fa-circle-o"></i> Unix/linux tutorial</a></li>
+            <li><a href="http://coding4medicine.com/Materials/scripting/"><i class="fa fa-circle-o"></i> Python tutorial</a></li>
+          </ul>
+        </li>
+
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>Long reads</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="http://coding4medicine.com/Materials/pacbio/"><i class="fa fa-circle-o"></i> Tutorial</a></li>
+            <li><a href="http://coding4medicine.com/Materials/pacbio/"><i class="fa fa-circle-o"></i> Programs</a></li>
+          </ul>
+        </li>
+
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>Assembly</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="http://coding4medicine.com/Materials/kmers/"><i class="fa fa-circle-o"></i> Kmer magic</a></li>
+            <li><a href="http://coding4medicine.com/Materials/assembly/"><i class="fa fa-circle-o"></i> Short read assembly</a></li>
+          </ul>
+        </li>
+
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>RNAseq</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="http://coding4medicine.com/Materials/rnaseq/"><i class="fa fa-circle-o"></i> Tutorial</a></li>
+            <li><a href="http://coding4medicine.com/Materials/rnaseq/"><i class="fa fa-circle-o"></i> Programs</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>Metagenomics</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="http://coding4medicine.com/Materials/metagenomics/"><i class="fa fa-circle-o"></i> Tutorial</a></li>
+            <li><a href="http://coding4medicine.com/Materials/metagenomics/"><i class="fa fa-circle-o"></i> Programs</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>Programs</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="http://coding4medicine.com/Materials/pandora/"><i class="fa fa-circle-o"></i> Pandora's Toolbox</a></li>
+          </ul>
+        </li>
+
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>Bleeding edge</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="http://coding4medicine.com/Materials/algorithm/"><i class="fa fa-circle-o"></i> Algorithms</a></li>
+            <li><a href="http://coding4medicine.com/Materials/code/"><i class="fa fa-circle-o"></i> Code analysis</a></li>
+          </ul>
+        </li>
+
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+

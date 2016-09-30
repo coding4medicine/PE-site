@@ -1,0 +1,43 @@
+<h2>Show admin</h2>
+
+<ul>
+
+  <li>
+    <strong>Email:</strong>
+    <%= @admin.email %>
+  </li>
+
+  <li>
+    <strong>Password hash:</strong>
+    <%= @admin.password_hash %>
+  </li>
+
+  <li>
+    <strong>Reset password token:</strong>
+    <%= @admin.reset_password_token %>
+  </li>
+
+  <li>
+    <strong>Reset password sent at:</strong>
+    <%= @admin.reset_password_sent_at %>
+  </li>
+
+  <li>
+    <strong>Confirmation token:</strong>
+    <%= @admin.confirmation_token %>
+  </li>
+
+  <li>
+    <strong>Confirmation sent at:</strong>
+    <%= @admin.confirmation_sent_at %>
+  </li>
+
+  <li>
+    <strong>Confirmed at:</strong>
+    <%= @admin.confirmed_at %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: admin_path(@conn, :edit, @admin) %>
+<%= link "Back", to: admin_path(@conn, :index) %>

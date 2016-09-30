@@ -1,0 +1,28 @@
+<h2>Listing sshkeys</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Key</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for sshkey <- @sshkeys do %>
+    <tr>
+      <td><%= sshkey.user_id %></td>
+      <td><%= sshkey.key %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: sshkey_path(@conn, :show, sshkey), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: sshkey_path(@conn, :edit, sshkey), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: sshkey_path(@conn, :delete, sshkey), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New sshkey", to: sshkey_path(@conn, :new) %>

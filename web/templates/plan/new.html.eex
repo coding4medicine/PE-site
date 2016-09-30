@@ -1,0 +1,6 @@
+<h2>New plan</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: plan_path(@conn, :create) %>
+
+<%= link "Back", to: plan_path(@conn, :index) %>
