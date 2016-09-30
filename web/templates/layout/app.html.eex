@@ -54,7 +54,7 @@
     <script src="http://coding4medicine.com:2161/admin/static/js/jquery-2.2.3.min.js"></script>
 <script src="http://coding4medicine.com:2161/admin/static/js/bootstrap.min.js"></script>
 <script src="http://coding4medicine.com:2161/admin/static/js/app.min.js"></script>
-<script src="http://coding4medicine.com:2161/admin/static/js/demo.js"></script>
+<script src="http://coding4medicine.com:2161/main.js"></script>
 
 
 </body>

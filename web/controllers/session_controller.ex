@@ -12,11 +12,11 @@ plug :put_layout, "login.html"
       {:ok, conn} ->
         logged_in_user = Guardian.Plug.current_resource(conn)
         conn
-        |> put_flash(:info, "Innlogget")
+        |> put_flash(:info, "Logged in")
         |> redirect(to: book_path(conn, :index))
       {:error, _reason, conn} ->
         conn
-        |> put_flash(:error, "Feil brukernavn/passord")
+        |> put_flash(:error, "Incorrect login/password")
         |> render("new.html")
     end
   end
@@ -24,7 +24,7 @@ plug :put_layout, "login.html"
   def delete(conn, _) do
     conn
     |> Guardian.Plug.sign_out
-    |> put_flash(:info, "Logget ut")
+    |> put_flash(:info, "Logged out")
     |> redirect(to: "/")
   end
 end
